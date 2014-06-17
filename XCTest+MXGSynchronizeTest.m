@@ -9,10 +9,12 @@
 
 @implementation XCTest (xc)
 
-+ (void)mxg_synchronizeTest:(void (^)(BOOL *finished))test {
++ (void)mxg_synchronizeTest:(void (^)(BOOL *finished))test 
+{
     BOOL testFinished = NO;
     test(&testFinished);
-    while(testFinished == NO) {
+    while(testFinished == NO) 
+    {
         [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
                                  beforeDate:[NSDate distantFuture]];
     }
