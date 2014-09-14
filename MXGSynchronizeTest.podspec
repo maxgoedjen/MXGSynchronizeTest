@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
   s.framework  = "XCTest"
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
+  s.xcconfig  =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PLATFORM_DIR)/Developer/Library/Frameworks"' }
 end
