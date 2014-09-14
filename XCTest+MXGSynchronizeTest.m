@@ -7,7 +7,7 @@
 
 #import "XCTest+MXGSynchronizeTest.h"
 
-@implementation XCTest (xc)
+@implementation XCTest (MXGSynchronizeTest)
 
 + (void)mxg_synchronizeTest:(void (^)(BOOL *finished))test {
     BOOL testFinished = NO;
