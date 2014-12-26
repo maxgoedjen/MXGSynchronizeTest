@@ -1,6 +1,9 @@
 MXGSynchronizeTest
 ==================
 
+You should probably use `XCTestExpectation` if you're using Xcode 6 or later instead of this.
+==================
+
 Install with CocoaPods
 
 ```
